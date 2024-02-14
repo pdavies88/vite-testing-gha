@@ -4,3 +4,5 @@
 - https://vitejs.dev/guide/
 - https://docs.cypress.io/guides/getting-started/installing-cypress
 - https://vitest.dev/guide/
+
+## Let's trigger the tests
