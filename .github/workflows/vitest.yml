@@ -1,0 +1,26 @@
+name: Vitest Tests
+
+on:
+  workflow_call:
+
+jobs:
+  vitest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Use latest npm
+        run: npm install -g npm
+
+      - name: Install Node dependencies
+        run: npm install
+
+      - name: Test Server
+        run: npm run test-unit

@@ -1,0 +1,11 @@
+name: Run Tests
+
+on:
+  pull_request:
+
+jobs:
+  vitest:
+    uses: ./.github/workflows/vitest.yml
+
+  cypress:
+    uses: ./.github/workflows/cypress.yml
